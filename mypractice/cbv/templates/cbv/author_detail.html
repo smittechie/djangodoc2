@@ -1,0 +1,16 @@
+<html>
+<body>
+{{ author.name }}
+<br>
+{{ author.last_accessed }}
+
+
+<form method="post">
+    {% csrf_token %}
+    Name: <input type="text" name="name">
+    <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>
